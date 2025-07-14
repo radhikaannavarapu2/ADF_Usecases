@@ -8,13 +8,16 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"value": ""
-		},
 		"AzureBlobStorage2_connectionString": {
 			"value": ""
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
@@ -22,6 +25,15 @@
 		},
 		"AzureDataLakeStorage2_properties_typeProperties_url": {
 			"value": "https://storageaccusecase22.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "radhikaserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "dbusecase3"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "RadhikaServer"
 		}
 	}
 }
