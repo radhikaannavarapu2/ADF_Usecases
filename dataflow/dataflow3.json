@@ -18,14 +18,14 @@
 						"referenceName": "AzureSqlTable3",
 						"type": "DatasetReference"
 					},
-					"name": "sink1"
+					"name": "valid"
 				},
 				{
 					"dataset": {
 						"referenceName": "AzureSqlTable4",
 						"type": "DatasetReference"
 					},
-					"name": "sink2"
+					"name": "invalid"
 				}
 			],
 			"transformations": [
@@ -68,7 +68,7 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink1",
+				"     errorHandlingOption: 'stopOnFirstError') ~> valid",
 				"split1@stream1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
@@ -86,7 +86,7 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink2"
+				"     errorHandlingOption: 'stopOnFirstError') ~> invalid"
 			]
 		}
 	}
